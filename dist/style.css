@@ -28,6 +28,11 @@ body {
   background-color: #f9f9f9;
 }
 
+#clock {
+  position: fixed;
+  top: 10%;
+}
+
 header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -132,6 +137,13 @@ h2.title {
   margin-right: 10px;
 }
 
+button.add-transaction:hover {
+  background-color: #2a5470;
+  color: #fff;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 .delete {
   cursor: pointer;
   margin-left: 10px;
@@ -142,9 +154,11 @@ h2.title {
   transition: all 0.3s ease;
 }
 
-.delete:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+button.delete-all:hover {
+  background-color: tomato;
+  color: #fff;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .options {
@@ -300,4 +314,15 @@ h2.title {
 
 .add-transaction-panel button:hover {
   background-color: rgb(25, 27, 51);
+}
+
+.fa-sack-dollar {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.fa-sack-dollar:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(360deg) scale(0.9);
+          transform: rotate(360deg) scale(0.9);
 }/*# sourceMappingURL=style.css.map */

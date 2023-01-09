@@ -18,6 +18,10 @@ body {
 	color: $--second-color;
 	background-color: $--first-color;
 }
+#clock {
+	position: fixed;
+	top: 10%;
+}
 header {
 	flex-direction: column;
 	justify-content: center;
@@ -89,6 +93,11 @@ h2.title {
 .transaction-name i {
 	margin-right: 10px;
 }
+button.add-transaction:hover {
+	background-color: #2a5470;
+	color: #fff;
+	transform: scale(0.9);
+}
 
 .delete {
 	cursor: pointer;
@@ -98,8 +107,10 @@ h2.title {
 	font-size: 18px;
 	transition: all 0.3s ease;
 }
-.delete:hover {
-	transform: scale(0.8);
+button.delete-all:hover {
+	background-color: tomato;
+	color: #fff;
+	transform: scale(0.9);
 }
 
 .options {
@@ -220,3 +231,12 @@ h2.title {
 .add-transaction-panel button:hover {
 	background-color: rgb(25, 27, 51);
 }
+.fa-sack-dollar {
+	transition: all 0.3s ease;
+}
+.fa-sack-dollar:hover {
+	cursor: pointer;
+	transform: rotate(360deg) scale(0.9);
+}
+
+// 190027 klips
